@@ -1,0 +1,72 @@
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%; 
+}
+.container {
+    background-color: black;
+    color: #c3c3c3;
+    display: grid;
+    grid-template-rows: 10vh 80vh 10vh ;
+}
+.gold-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.gold-header__text {
+    font-size: 1.5rem;
+    margin-left: 2rem;
+    font-family: 'Poppins';
+}
+
+.gold-header .gold-header__icons a {
+    margin-right: 2rem;
+}
+.gold-header .gold-header__icons a img {
+    height: 2.2rem;
+    width: 2.2rem;
+}
+.content_image {
+    width: 75rem;
+}
+.content_image img {
+    width: 100%;
+}
+.content, .gold-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-text {
+    font-size: 2rem;
+    font-family: 'Poppins';
+}
+@media screen and (max-width: 767px) {
+    .content {
+        padding: 2rem;
+    }
+    .content_image {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .gold-header {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    .gold-header__text {
+        margin-left: 0;
+    }
+    .gold-header__icons {
+        text-align: center;
+    }
+}
