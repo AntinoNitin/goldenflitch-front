@@ -39,14 +39,20 @@ html {
 .content_image img {
     width: 100%;
 }
-.content, .gold-footer{
+.content, .gold-footer {
     display: flex;
     justify-content: center;
     align-items: center;
+} 
+.gold-footer{
+    flex-direction: column;
 }
-.footer-text {
+.footer-text, .footer-comingText {
     font-size: 2rem;
     font-family: 'Poppins';
+}
+.footer-comingText {
+    font-size: 1.5rem;
 }
 @media screen and (max-width: 767px) {
     .content {
